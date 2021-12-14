@@ -17,5 +17,5 @@ after_success:
   - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push rzkx90/multi-client
   - docker push rzkx90/multi-server
-  - docker push rzk90/multi-nginx
-  - docker push rkz90/multi-worker 
+  - docker push rzkx90/multi-nginx
+  - docker push rzkx90/multi-worker 

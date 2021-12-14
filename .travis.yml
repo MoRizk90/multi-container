@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t rzkx90/react-test -file ./client/Dockerfile.Dev ./client
+  - docker build -t rzkx90/react-test -file ./client/Dockerfile.Dev ./client/
 
 script:
   - docker run -e CI=true rzkx90/react-test npm test
